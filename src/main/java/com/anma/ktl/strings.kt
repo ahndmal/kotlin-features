@@ -7,10 +7,17 @@ fun main() {
     var str12 = "CoDe"
     val subStr1 = str1.substring(1, 4)
 
-    println ("$str1 $name")
-    println(name[4])
-    println(str12.toLowerCase())
-    println(str12.toUpperCase())
+    val toSplit = "Hello there from the program"
+    val array = toSplit.split(" ")
+    val array2 = name.split("")
+    val toStr1 = array2.joinToString(separator = "")
+    println(array2.toString())
+    println(toStr1)
+
+//    println ("$str1 $name")
+//    println(name[4])
+//    println(str12.toLowerCase())
+//    println(str12.toUpperCase())
 
 
 }
