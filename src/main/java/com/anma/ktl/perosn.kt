@@ -16,7 +16,7 @@ class FastestWay {
 
 fun main() {
 
-        print(FastestWay().shortestTime(100, 100, 50, 50))
-        print(FastestWay().shortestTime(90, 80, 50, 40))
+    println(FastestWay().shortestTime(100, 100, 50, 50))
+    println(FastestWay().shortestTime(90, 80, 50, 40))
 
 }
