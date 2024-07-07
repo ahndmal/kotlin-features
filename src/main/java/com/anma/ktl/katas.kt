@@ -7,13 +7,12 @@ fun main(args: Array<String>) {
 //    println(dutyFree(12, 50, 1000))
 //    println(digitize(348597))
 //    println(reverseWords("The greatest victory is that which requires no battle"))
-    println(maps(intArrayOf(1,2,3)))
+    println(maps(intArrayOf(1, 2, 3)))
 
 
 }
 
 fun solve(s: String): String {
-
     val array: Array<Char> = s.toCharArray().map { it.toChar() }.toTypedArray()
 
     var lower = 0
@@ -50,8 +49,8 @@ fun dutyFree(normPrice: Int, discount: Int, hol: Int): Int {
 //    return (hol / (normPrice * discount)) * 100
 }
 
-//Given a random non-negative number, you have to return the digits of this number within an array in reverse order. 348597 => [7,9,5,8,4,3]
-//fun digitize(n: Long): IntArray {
+// Given a random non-negative number, you have to return the digits of this number within an array in reverse order. 348597 => [7,9,5,8,4,3]
+// fun digitize(n: Long): IntArray {
 fun digitize(n: Long): String {
 
     var str = n.toString()
