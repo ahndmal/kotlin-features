@@ -9,6 +9,9 @@ fun main(args: Array<String>) {
     var localDate: LocalDateTime = LocalDateTime.now();
     println(localDate.month)
 
+    localDate = localDate.plusDays(10)
+    println(localDate.month)
+
     val days = Period.ofWeeks(8).days
     println(days)
 

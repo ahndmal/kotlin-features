@@ -1,14 +1,8 @@
 package com.anma.ktl
 
 fun main(args: Array<String>) {
-//    println(isDivisible(12, 3, 4))
-//    println(solve("coDE"))
-//    println(repeat_str(3, "Hello"))
-//    println(dutyFree(12, 50, 1000))
-//    println(digitize(348597))
-//    println(reverseWords("The greatest victory is that which requires no battle"))
-    println(maps(intArrayOf(1, 2, 3)))
 
+    abbrevName("Sam Harris")
 
 }
 
@@ -77,6 +71,29 @@ fun maps(x: IntArray): IntArray {
 
 }
 
+fun evenOrOdd(number: Int): String {
+    return if (number % 2 == 0) "even" else "odd"
+}
 
+fun makeUpperCase(str: String): String {
+    return str.uppercase()
+}
 
+fun invert(arr: IntArray): IntArray {
+    val newArr = IntArray(arr.size)
+    for (i in arr) {
+        newArr[i] = i * -1
+    }
+
+    return newArr
+}
+
+fun abbrevName(name: String): String {
+    val nameParts = name.split(" ")
+    return nameParts[0].uppercase() + "." + nameParts[1].uppercase()
+}
+
+fun oddCount(n: Int): Int {
+    return 0
+}
 
